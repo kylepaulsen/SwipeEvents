@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>Swipe Stuff</title>
+<!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.js"></script>-->
+<script src="swipelistener.min.js"></script>
+</head>
+<body>
+<!--<div style="width: 1000px; height: 1000px; border: 1px solid #000">-->
+    <div style="width: 100px; height: 100px; margin: 300px auto; background-color: #f00;" id="ok"></div>
+<!--</div>-->
+
+<script>
+/* eslint quotes: [2, "double"] */
+function get(id) {
+    return document.getElementById(id);
+}
+
+var target = get("ok");
+swipeListener(target, "swipeleft", function() {
+    this.innerHTML = "Swiped Left!!<br>" + Math.random();
+});
+
+swipeListener(target, "swiperight", function() {
+    this.innerHTML = "Swiped Right!!<br>" + Math.random();
+});
+
+swipeListener(target, "swipeup", function() {
+    this.innerHTML = "Swiped Up!!<br>" + Math.random();
+});
+
+swipeListener(target, "swipedown", function() {
+    this.innerHTML = "Swiped Down!!<br>" + Math.random();
+});
+
+swipeListener(target, "swipe", function(e) {
+    console.log("A general swipe event. type: " + e.type, e);
+});
+
+// swipeListener.allowScrolling = true;
+</script>
+</body>
+</html>

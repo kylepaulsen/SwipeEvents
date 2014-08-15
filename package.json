@@ -1,0 +1,26 @@
+{
+  "name": "swipelistener",
+  "version": "0.1.0",
+  "description": "Swipe event listeners with a small footprint.",
+  "author": {
+    "name": "Kyle Paulsen",
+    "email": "kyle.a.paulsen@gmail.com",
+    "url": "http://www.kylepaulsen.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kylepaulsen/SwipeEvents"
+  },
+  "keywords": [
+    "swipe",
+    "events",
+    "mobile",
+    "gestures"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-concat": "^0.5.0"
+  }
+}
